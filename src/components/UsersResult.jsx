@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import UserItem from "./UserItem"
 import spinner from '../Images/Spinner.svg'
 
+
 function UsersResult() {
     
     const [users, setUsers] = useState([])

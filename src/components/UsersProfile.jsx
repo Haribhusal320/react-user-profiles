@@ -16,8 +16,8 @@ function UsersProfile() {
     const { name } = useParams();
     useEffect (() => {
       fetchUsers()
-
-    }, [])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [name])
 
 const fetchUsers = async () => {
     const response = await fetch (`https://randomuser.me/api/?results=40&seed=aboveit&exc=login`)
